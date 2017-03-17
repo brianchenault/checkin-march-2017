@@ -38,12 +38,29 @@ const images = {
   ip: require('../assets/pics/ip.jpg'),
   pantry: require('../assets/pics/pantry.jpg'),
   risotto: require('../assets/pics/risotto.jpg'),
+  sting1: require('../assets/pics/sting1.jpg'),
+  sting2: require('../assets/pics/sting2.jpg'),
+  sting3: require('../assets/pics/sting3.jpg'),
+  sting4: require('../assets/pics/sting4.jpg'),
   taos1: require('../assets/pics/taos.jpg'),
   taos2: require('../assets/pics/taos2.jpg'),
   taos3: require('../assets/pics/taos3.jpg'),
+  taos4: require('../assets/pics/taos4.jpg'),
+  taos5: require('../assets/pics/taos5.jpg'),
+  taos6: require('../assets/pics/taos6.jpg'),
+  taos7: require('../assets/pics/taos7.jpg'),
+  taos8: require('../assets/pics/taos8.jpg'),
   sand1: require('../assets/pics/sand1.jpg'),
   sand2: require('../assets/pics/sand2.jpg'),
-  sand3: require('../assets/pics/sand3.jpg')
+  sand3: require('../assets/pics/sand3.jpg'),
+  sand4: require('../assets/pics/sand4.jpg'),
+  mountains1: require('../assets/pics/mountain1.jpg'),
+  mountains2: require('../assets/pics/mountain2.jpg'),
+  mountains3: require('../assets/pics/mountain3.jpg'),
+  mountains4: require('../assets/pics/mountains4.jpg'),
+  mountains5: require('../assets/pics/mountains5.jpg'),
+  mountains6: require('../assets/pics/mountains6.jpg'),
+  mountains7: require('../assets/pics/mountains7.jpg'),
 };
 
 preloader(images);
@@ -66,7 +83,13 @@ const imageContainerStyle = {
 
 const imageContainerStyle2 = {
   width: '280px',
-  height: '280px',
+  height: 'auto',
+  margin: '10px'
+};
+
+const imageContainerStyle3 = {
+  width: '440px',
+  height: 'auto',
   margin: '10px'
 };
 
@@ -146,34 +169,97 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={["fade"]} bgColor="tertiary">
-            <Heading size={8} textColor="primary" caps>Taos, NM & Great Sand Dunes Nat'l Park</Heading>
+            <Heading size={8} textColor="primary" caps>Taos, NM</Heading>
           </Slide>
 
           <Slide transition={["fade"]} bgColor="tertiary">
             <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
-              <div style={imageContainerStyle2}>
+              <div style={imageContainerStyle3}>
                 <img src={images.taos1} style={imageStyle} />
               </div>
-              <div style={imageContainerStyle2}>
-                <img src={images.taos2} style={imageStyle} />
-              </div>
-              <div style={imageContainerStyle2}>
-                <img src={images.taos3} style={imageStyle} />
-              </div>
-              <div style={imageContainerStyle2}>
-                <img src={images.sand1} style={imageStyle} />
-              </div>
-              <div style={imageContainerStyle2}>
-                <img src={images.sand2} style={imageStyle} />
-              </div>
-              <div style={imageContainerStyle2}>
-                <img src={images.sand3} style={imageStyle} />
+              <div style={imageContainerStyle3}>
+                <img src={images.taos4} style={imageStyle} />
               </div>
             </div>
           </Slide>
 
           <Slide transition={["fade"]} bgColor="tertiary">
-            <Heading size={5} textColor="primary" caps>Mountains</Heading>
+            <div style={{ margin: '0 auto', width: '1000px'}}>
+              <div style={{
+                  width: '338px',
+                  height: 'auto',
+                  margin: '0 auto'
+                }}>
+                <img src={images.taos5} style={imageStyle} />
+              </div>
+            </div>
+          </Slide>
+
+          <Slide transition={["fade"]} bgColor="tertiary">
+            <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
+              <div style={imageContainerStyle3}>
+                <img src={images.taos2} style={imageStyle} />
+              </div>
+              <div style={imageContainerStyle3}>
+                <img src={images.taos3} style={imageStyle} />
+              </div>
+            </div>
+          </Slide>
+
+          <Slide transition={["fade"]} bgColor="tertiary">
+            <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
+              <div style={imageContainerStyle2}>
+                <img src={images.taos6} style={{width: '900px'}} />
+              </div>
+            </div>
+          </Slide>
+
+
+          <Slide transition={["fade"]} bgColor="tertiary">
+            <Heading size={8} textColor="primary" caps>Great Sand Dunes Nat'l Park</Heading>
+          </Slide>
+
+          <Slide transition={["fade"]} bgColor="tertiary">
+            <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
+              <div style={imageContainerStyle3}>
+                <img src={images.sand1} style={imageStyle} />
+              </div>
+              <div style={imageContainerStyle3}>
+                <img src={images.sand2} style={imageStyle} />
+              </div>
+            </div>
+          </Slide>
+
+          <Slide transition={["fade"]} bgColor="tertiary">
+            <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
+              <div style={imageContainerStyle3}>
+                <img src={images.sand3} style={imageStyle} />
+              </div>
+              <div style={imageContainerStyle3}>
+                <img src={images.sand4} style={imageStyle} />
+              </div>
+            </div>
+          </Slide>
+
+          <Slide transition={["fade"]} bgColor="tertiary">
+            <Heading size={5} textColor="primary" caps>Sting on <span style={{fontFamily: '"Apple Color Emoji","Segoe UI Emoji","NotoColorEmoji","Segoe UI Symbol","Android Emoji","EmojiSymbols"'}}>❤️️</span> Day</Heading>
+          </Slide>
+
+          <Slide transition={["fade"]} bgColor="tertiary">
+            <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
+              <div style={imageContainerStyle3}>
+                <img src={images.sting1} style={imageStyle} />
+              </div>
+              <div style={imageContainerStyle3}>
+                <img src={images.sting2} style={imageStyle} />
+              </div>
+              <div style={imageContainerStyle3}>
+                <img src={images.sting3} style={imageStyle} />
+              </div>
+              <div style={imageContainerStyle3}>
+                <img src={images.sting4} style={imageStyle} />
+              </div>
+            </div>
           </Slide>
 
         </Deck>

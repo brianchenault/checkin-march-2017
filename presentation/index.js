@@ -47,7 +47,7 @@ const imageContainerStyle = {
 
 const imageContainerStyle2 = {
   width: '280px',
-  height: 'auto',
+  height: '280px',
   margin: '10px'
 };
 
@@ -131,6 +131,37 @@ export default class Presentation extends React.Component {
               <iframe src="https://www.youtube.com/embed/SIrxGKSvLZU?ecver=2" width="640" height="360" frameborder="0"  allowfullscreen></iframe>
             </div>
           </Slide>
+
+          <Slide transition={["fade"]} bgColor="tertiary">
+            <Heading size={5} textColor="primary" caps>New Lady</Heading>
+          </Slide>
+
+          <Slide transition={["fade"]} bgColor="tertiary">
+            <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
+              <div style={imageContainerStyle2}>
+                <img src={images.h1} style={{
+                  width: '100%',
+                  height: 'auto',
+                  webkitBorderRadius: '10px'
+                }} />
+              </div>
+              <div style={imageContainerStyle2}>
+                <img src={images.h3} style={{
+                  width: '100%',
+                  height: 'auto',
+                  webkitBorderRadius: '10px'
+                }} />
+              </div>
+              <div style={imageContainerStyle2}>
+                <img src={images.h2} style={{
+                  width: '100%',
+                  height: 'auto',
+                  webkitBorderRadius: '10px'
+                }} />
+              </div>
+            </div>
+          </Slide>
+
 
           <Slide transition={["fade"]} bgColor="tertiary">
             <Heading size={8} textColor="primary" caps>Taos, NM</Heading>
@@ -288,18 +319,48 @@ export default class Presentation extends React.Component {
             </div>
           </Slide>
 
-
           <Slide transition={["fade"]} bgColor="tertiary">
             <Heading size={5} textColor="primary" caps>Dance Lessons</Heading>
             <div style={{
-                width: '100%',
-                height: 'auto',
-                margin: '40px auto 0 auto'
-              }}>
+              width: '100%',
+              height: 'auto',
+              margin: '40px auto 0 auto'
+            }}>
               <img src={images.fred} style={imageStyle} />
             </div>
           </Slide>
 
+          <Slide transition={["fade"]} bgColor="tertiary">
+            <Heading size={5} textColor="primary" caps>Upcoming Travel</Heading>
+          </Slide>
+
+          <Slide transition={["fade"]} bgColor="tertiary">
+            <Heading size={6} textColor="primary" caps>Minneapolis 3/30 - 4/2</Heading>
+            <div style={{
+              width: '600px',
+              height: 'auto',
+              margin: '40px auto 0 auto'
+            }}>
+              <img src={images.prince} style={imageStyle} />
+            </div>
+          </Slide>
+
+          <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+            <Heading style={{fontSize: '30px'}} textColor="secondary" caps>Long weekend trips I hope to make this year</Heading>
+            <List style={{
+              margin: '40px auto',
+              width: '400px'
+            }}>
+              <ListItem>Austin</ListItem>
+              <ListItem>Portland</ListItem>
+              <ListItem>Salt Lake City</ListItem>
+              <ListItem>Vancouver</ListItem>
+              <ListItem>Las Vegas</ListItem>
+              <ListItem>Pittsburgh</ListItem>
+              <ListItem>Detroit</ListItem>
+              <ListItem>Moab</ListItem>
+            </List>
+          </Slide>
         </Deck>
         {this.state.playMusic === true &&
           <iframe style={{display: 'none'}} width="0" height="0" scrolling="no" frameborder="no"
@@ -307,6 +368,10 @@ export default class Presentation extends React.Component {
         }
       </div>
     );
+
+    // CA -->
+
+    // ReactConf -->
   }
 
   stopMusic() {
@@ -332,20 +397,5 @@ export default class Presentation extends React.Component {
  <Heading size={4} textColor="secondary">Heading 4</Heading>
  <Heading size={5} textColor="secondary">Heading 5</Heading>
  <Text size={6} textColor="secondary">Standard text</Text>
- </Slide>
- <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
- <Heading size={6} textColor="secondary" caps>Standard List</Heading>
- <List>
- <ListItem>Item 1</ListItem>
- <ListItem>Item 2</ListItem>
- <ListItem>Item 3</ListItem>
- <ListItem>Item 4</ListItem>
- </List>
- </Slide>
- <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
- <BlockQuote>
- <Quote>Example Quote</Quote>
- <Cite>Author</Cite>
- </BlockQuote>
  </Slide>
  */

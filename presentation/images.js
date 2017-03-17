@@ -35,7 +35,11 @@ const images = {
   mountains6: require('../assets/pics/mountains6.jpg'),
   mountains7: require('../assets/pics/mountains7.jpg'),
   mountains8: require('../assets/pics/mountains8.jpg'),
-  fred: require('../assets/pics/fred.jpg')
+  fred: require('../assets/pics/fred.jpg'),
+  h1: require('../assets/pics/h1.jpg'),
+  h2: require('../assets/pics/h2.jpg'),
+  h3: require('../assets/pics/h3.jpg'),
+  prince: require('../assets/pics/prince.jpg')
 };
 
 export default images

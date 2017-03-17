@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f8ed56a-baa4-43b6-8bda-ec7192607c26" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/pics/highway1_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/pics/highway1_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/pics/mountains6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/pics/mountains7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/pics/taos5.jpg" afterPath="$PROJECT_DIR$/assets/pics/taos5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/pics/mountains4.jpg" afterPath="$PROJECT_DIR$/assets/pics/mountains4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/pics/mountains6.jpg" afterPath="$PROJECT_DIR$/assets/pics/mountains6.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presentation/index.js" afterPath="$PROJECT_DIR$/presentation/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,14 +25,31 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/presentation/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="233" column="84" lean-forward="false" selection-start-line="233" selection-start-column="84" selection-end-line="233" selection-end-column="84" />
+            <state relative-caret-position="174">
+              <caret line="296" column="26" lean-forward="false" selection-start-line="296" selection-start-column="26" selection-end-line="296" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="images.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/presentation/images.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -55,6 +68,7 @@
       <list>
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/presentation/images.js" />
         <option value="$PROJECT_DIR$/presentation/index.js" />
       </list>
     </option>
@@ -71,8 +85,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="44" />
-    <option name="y" value="24" />
+    <option name="x" value="31" />
+    <option name="y" value="23" />
     <option name="width" value="1369" />
     <option name="height" value="769" />
   </component>
@@ -114,7 +128,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="presentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spectacle-boilerplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spectacle-boilerplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spectacle-boilerplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spectacle-boilerplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pics" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -213,18 +259,18 @@
       <workItem from="1489616202718" duration="104000" />
       <workItem from="1489621843256" duration="6386000" />
       <workItem from="1489765908559" duration="125000" />
-      <workItem from="1489768847056" duration="3794000" />
+      <workItem from="1489768847056" duration="5783000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10409000" />
+    <option name="totallyTimeSpent" value="12398000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="44" y="24" width="1369" height="769" extended-state="0" />
-    <editor active="false" />
+    <frame x="31" y="23" width="1369" height="769" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -347,10 +393,23 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/pics/mountains4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/images.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/presentation/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="233" column="84" lean-forward="false" selection-start-line="233" selection-start-column="84" selection-end-line="233" selection-end-column="84" />
+        <state relative-caret-position="174">
+          <caret line="296" column="26" lean-forward="false" selection-start-line="296" selection-start-column="26" selection-end-line="296" selection-end-column="26" />
           <folding />
         </state>
       </provider>

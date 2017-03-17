@@ -37,7 +37,13 @@ const images = {
   asian: require('../assets/pics/asian.jpg'),
   ip: require('../assets/pics/ip.jpg'),
   pantry: require('../assets/pics/pantry.jpg'),
-  risotto: require('../assets/pics/risotto.jpg')
+  risotto: require('../assets/pics/risotto.jpg'),
+  taos1: require('../assets/pics/taos.jpg'),
+  taos2: require('../assets/pics/taos2.jpg'),
+  taos3: require('../assets/pics/taos3.jpg'),
+  sand1: require('../assets/pics/sand1.jpg'),
+  sand2: require('../assets/pics/sand2.jpg'),
+  sand3: require('../assets/pics/sand3.jpg')
 };
 
 preloader(images);
@@ -55,6 +61,12 @@ const theme = createTheme({
 const imageContainerStyle = {
   width: '200px',
   height: '200px',
+  margin: '10px'
+};
+
+const imageContainerStyle2 = {
+  width: '280px',
+  height: '280px',
   margin: '10px'
 };
 
@@ -76,6 +88,7 @@ export default class Presentation extends React.Component {
     return (
       <div>
         <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
+
           <Slide transition={["zoom"]} bgColor="primary">
             <Heading size={1} fit caps lineHeight={1} textColor="secondary">
               Brian's Personal Check-in
@@ -84,9 +97,11 @@ export default class Presentation extends React.Component {
               March 2017
             </Text>
           </Slide>
+
           <Slide transition={["fade"]} bgColor="tertiary">
-            <Heading size={4} textColor="primary" caps>Cooking</Heading>
+            <Heading size={6} textColor="primary" caps>Cooking</Heading>
           </Slide>
+
           <Slide transition={["fade"]} bgColor="tertiary">
             <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
               <div style={imageContainerStyle}>
@@ -121,14 +136,46 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={["fade"]} bgColor="tertiary">
-            <div onClick={this.stopMusic.bind(this)}
-                 style={{ color: '#fff', fontSize: '20px', marginBottom: '20px', cursor: 'pointer'}}>stop the music</div>
+            <div onClick={this.state.playMusic ? this.stopMusic.bind(this) : this.startMusic.bind(this)}
+                 style={{ color: '#fff', fontSize: '14px', marginBottom: '20px', cursor: 'pointer'}}>
+              {this.state.playMusic ? 'stop music' : 'start music'}
+            </div>
             <div style="position:relative;height:0;padding-bottom:56.25%">
               <iframe src="https://www.youtube.com/embed/SIrxGKSvLZU?ecver=2" width="640" height="360" frameborder="0"  allowfullscreen></iframe>
             </div>
-            <div onClick={this.startMusic.bind(this)}
-                 style={{ color: '#fff', fontSize: '20px', marginTop: '20px', cursor: 'pointer'}}>start the music</div>
           </Slide>
+
+          <Slide transition={["fade"]} bgColor="tertiary">
+            <Heading size={8} textColor="primary" caps>Taos, NM & Great Sand Dunes Nat'l Park</Heading>
+          </Slide>
+
+          <Slide transition={["fade"]} bgColor="tertiary">
+            <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
+              <div style={imageContainerStyle2}>
+                <img src={images.taos1} style={imageStyle} />
+              </div>
+              <div style={imageContainerStyle2}>
+                <img src={images.taos2} style={imageStyle} />
+              </div>
+              <div style={imageContainerStyle2}>
+                <img src={images.taos3} style={imageStyle} />
+              </div>
+              <div style={imageContainerStyle2}>
+                <img src={images.sand1} style={imageStyle} />
+              </div>
+              <div style={imageContainerStyle2}>
+                <img src={images.sand2} style={imageStyle} />
+              </div>
+              <div style={imageContainerStyle2}>
+                <img src={images.sand3} style={imageStyle} />
+              </div>
+            </div>
+          </Slide>
+
+          <Slide transition={["fade"]} bgColor="tertiary">
+            <Heading size={5} textColor="primary" caps>Mountains</Heading>
+          </Slide>
+
         </Deck>
         {this.state.playMusic === true &&
           <iframe style={{display: 'none'}} width="0" height="0" scrolling="no" frameborder="no"

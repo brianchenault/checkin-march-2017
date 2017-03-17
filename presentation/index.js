@@ -361,6 +361,18 @@ export default class Presentation extends React.Component {
               <ListItem>Moab</ListItem>
             </List>
           </Slide>
+
+          <Slide transition={["fade"]} bgColor="secondary">
+            <Heading size={4} textColor="primary">Feel free to follow me on Instagram:</Heading>
+            <br/>
+            <Text size={6} textColor="primary">@sh0egaze</Text>
+          </Slide>
+
+          <Slide transition={["fade"]} bgColor="tertiary">
+            <Heading size={6} textColor="secondary">This deck was made (with React) using:</Heading>
+            <br/>
+            <Text size={6} textColor="secondary">https://github.com/FormidableLabs/spectacle</Text>
+          </Slide>
         </Deck>
         {this.state.playMusic === true &&
           <iframe style={{display: 'none'}} width="0" height="0" scrolling="no" frameborder="no"

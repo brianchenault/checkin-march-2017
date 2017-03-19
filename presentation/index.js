@@ -320,6 +320,32 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={["fade"]} bgColor="tertiary">
+            <Heading size={5} textColor="primary" caps>California</Heading>
+          </Slide>
+
+          <Slide transition={["fade"]} bgColor="tertiary">
+            <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
+              <div style={imageContainerStyle3}>
+                <img src={images.napa1} style={imageStyle} />
+              </div>
+              <div style={imageContainerStyle3}>
+                <img src={images.napa2} style={imageStyle} />
+              </div>
+            </div>
+          </Slide>
+
+          <Slide transition={["fade"]} bgColor="tertiary">
+            <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
+              <div style={imageContainerStyle3}>
+                <img src={images.hw2} style={imageStyle} />
+              </div>
+              <div style={imageContainerStyle3}>
+                <img src={images.hw3} style={imageStyle} />
+              </div>
+            </div>
+          </Slide>
+
+          <Slide transition={["fade"]} bgColor="tertiary">
             <Heading size={5} textColor="primary" caps>Dance Lessons</Heading>
             <div style={{
               width: '100%',

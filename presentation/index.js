@@ -24,7 +24,6 @@ import createTheme from "spectacle/lib/themes/default";
 require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
 
-
 import images from './images'
 
 preloader(images);

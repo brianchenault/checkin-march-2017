@@ -45,7 +45,8 @@ const images = {
   h1: require('../assets/pics/h1.jpg'),
   h2: require('../assets/pics/h2.jpg'),
   h3: require('../assets/pics/h3.jpg'),
-  prince: require('../assets/pics/prince.jpg')
+  prince: require('../assets/pics/prince.jpg'),
+  omaha: require('../assets/pics/omaha.jpg')
 };
 
 export default images

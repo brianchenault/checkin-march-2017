@@ -370,6 +370,17 @@ export default class Presentation extends React.Component {
             </div>
           </Slide>
 
+          <Slide transition={["fade"]} bgColor="tertiary">
+            <Heading size={6} textColor="primary" caps>Omaha 5/3 - 5/5</Heading>
+            <div style={{
+              width: '600px',
+              height: 'auto',
+              margin: '40px auto 0 auto'
+            }}>
+              <img src={images.omaha} style={imageStyle} />
+            </div>
+          </Slide>
+
           <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
             <Heading style={{fontSize: '30px'}} textColor="secondary" caps>Long weekend trips I hope to make this year</Heading>
             <List style={{
